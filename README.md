@@ -1,290 +1,302 @@
 <a name="readme-top"></a>
 
-# Lingo - Interactive platform for language learning.
+# 💰 FINTEENS - Financial Literacy Learning Platform
 
-![Lingo - Interactive platform for language learning.](/.github/images/img_main.png "Lingo - Interactive platform for language learning.")
+> Master money management, investing, budgeting, and financial decision-making with interactive lessons designed for teens.
 
-[![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
-[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/duolingo-clone?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/duolingo-clone/blob/main/LICENSE "GitHub license")
-[![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/duolingo-clone/commits/main "Maintenance")
-[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/duolingo-clone?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/duolingo-clone/branches "GitHub branches")
-[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/duolingo-clone?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/duolingo-clone/commits "Github commits")
-[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/duolingo-clone?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/duolingo-clone/issues "GitHub issues")
-[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/duolingo-clone?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/duolingo-clone/pulls "GitHub pull requests")
-[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://lingo-clone.vercel.app/ "Vercel status")
+Master financial literacy with interactive lessons, quizzes, and progress tracking. Learn banking basics, budgeting strategies, investing fundamentals, and credit management through an engaging, gamified learning experience.
+
+[![GitHub license](https://flat.badgen.net/github/license/harshDhiman3344/FinTeensAPP?icon=github&color=black&scale=1.01)](https://github.com/harshDhiman3344/FinTeensAPP/blob/main/LICENSE "GitHub license")
+[![Maintenance](https://flat.badgen.net/static/Status/Active?icon=github&color=black&scale=1.01)](https://github.com/harshDhiman3344/FinTeensAPP "Maintenance")
+[![GitHub issues](https://flat.badgen.net/github/issues/harshDhiman3344/FinTeensAPP?icon=github&color=black&scale=1.01)](https://github.com/harshDhiman3344/FinTeensAPP/issues "GitHub issues")
+[![Next.js](https://img.shields.io/badge/Next.js-16.2.1-black?style=flat-square&logo=next.js)](https://nextjs.org/ "Next.js Version")
 
 <!-- Table of Contents -->
 <details>
 
 <summary>
 
-# :notebook_with_decorative_cover: Table of Contents
+# 📚 Table of Contents
 
 </summary>
 
-- [Folder Structure](#bangbang-folder-structure)
-- [Getting Started](#toolbox-getting-started)
-- [Screenshots](#camera-screenshots)
-- [Tech Stack](#gear-tech-stack)
-- [Stats](#wrench-stats)
-- [Contribute](#raised_hands-contribute)
-- [Acknowledgements](#gem-acknowledgements)
-- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
-- [Follow Me](#rocket-follow-me)
-- [Learn More](#books-learn-more)
-- [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
-- [Give A Star](#star-give-a-star)
-- [Star History](#star2-star-history)
-- [Give A Star](#star-give-a-star)
+- [Features](#-features)
+- [Courses](#courses)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Environment Variables](#-environment-variables)
+- [Running the Application](#-running-the-application)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 </details>
 
-## :bangbang: Folder Structure
+## ⭐ Features
 
-Here is the folder structure of this app.
+- **Interactive Lessons** - Engaging, bite-sized financial education modules
+- **Progress Tracking** - Monitor your financial literacy journey with real-time progress
+- **Gamified Learning** - Earn points, hearts, and unlock achievements
+- **Multiple Courses** - Learn banking basics, budgeting, investing, and credit management
+- **Responsive Design** - Beautiful UI that works on desktop, tablet, and mobile devices
+- **No Authentication Required** - Get started immediately with demo mode
+- **Mock Data System** - Fully functional demo without database requirements
 
-<!--- FOLDER_STRUCTURE_START --->
-```bash
-duolingo-clone/
-  |- actions/
-    |-- challenge-progress.ts
-    |-- user-progress.ts
-    |-- user-subscription.ts
-  |- app/
-    |-- (auth)/
-    |-- (main)/
-    |-- (marketing)/
-    |-- admin/
-    |-- api/
-    |-- lesson/
-    |-- apple-icon.png
-    |-- favicon.ico
-    |-- globals.css
-    |-- icon1.png
-    |-- icon2.png
-    |-- layout.tsx
-  |- components/
-    |-- modals/
-    |-- ui/
-    |-- banner.tsx
-    |-- feed-wrapper.tsx
-    |-- mobile-header.tsx
-    |-- mobile-sidebar.tsx
-    |-- promo.tsx
-    |-- quests.tsx
-    |-- sidebar-item.tsx
-    |-- sidebar.tsx
-    |-- sticky-wrapper.tsx
-    |-- user-progress.tsx
-  |- config/
-    |-- index.ts
-  |- db/
-    |-- drizzle.ts
-    |-- queries.ts
-    |-- schema.ts
-  |- lib/
-    |-- admin.ts
-    |-- stripe.ts
-    |-- utils.ts
-  |- public/
-  |- scripts/
-    |-- prod.ts
-  |- store/
-    |-- use-exit-modal.ts
-    |-- use-hearts-modal.ts
-    |-- use-practice-modal.ts
-  |- .env.example
-  |- .env/.env.local
-  |- .gitignore
-  |- .prettierrc.json
-  |- bun.lock
-  |- components.json
-  |- constants.ts
-  |- drizzle.config.ts
-  |- environment.d.ts
-  |- eslint.config.mjs
-  |- next.config.ts
-  |- package.json
-  |- postcss.config.js
-  |- proxy.ts
-  |- tailwind.config.ts
-  |- tsconfig.json
-  |- vercel.ts
+## 📖 Courses
+
+### 1. **Banking Basics** 🏦
+- What is a Bank?
+- Types of Bank Accounts
+- How to Open an Account
+- Interest Rates Explained
+- Online Banking Safety
+
+### 2. **Budgeting 101** 📊
+- Creating Your Budget
+- Income vs. Expenses
+- Savings Strategies
+- Emergency Funds
+- Budget Tools & Apps
+
+### 3. **Investing Fundamentals** 📈
+- Stock Market Basics
+- Types of Investments
+- Risk vs. Reward
+- Diversification
+- Long-term Planning
+
+### 4. **Credit & Debt** 💳
+- Understanding Credit
+- Credit Scores
+- Debt Management
+- Loan Types
+- Building Credit History
+
+## 🗂️ Project Structure
+
 ```
-<!--- FOLDER_STRUCTURE_END --->
+finteens/
+  ├── actions/                 # Server actions for progress & challenges
+  │   ├── challenge-progress.ts
+  │   ├── user-progress.ts
+  │   └── user-subscription.ts
+  ├── app/                     # Next.js app directory
+  │   ├── (auth)/             # Authentication pages
+  │   ├── (main)/             # Main application routes
+  │   ├── (marketing)/        # Landing page
+  │   ├── admin/              # Admin panel
+  │   ├── api/                # API endpoints
+  │   └── lesson/             # Lesson pages
+  ├── components/             # Reusable UI components
+  │   ├── ui/                 # Base components (buttons, dialogs, etc)
+  │   ├── modals/             # Modal components
+  │   └── layout components
+  ├── db/                     # Database configuration
+  │   ├── queries.ts          # Mock data & database queries
+  │   ├── schema.ts           # Database schema
+  │   └── drizzle.ts          # Drizzle ORM config
+  ├── lib/                    # Utility functions
+  ├── public/                 # Static assets
+  ├── store/                  # Zustand state management
+  └── config/                 # App configuration
 
-<br />
 
-## :toolbox: Getting Started
+## 🚀 Getting Started
 
-1. Make sure **Git** and **NodeJS** is installed.
-2. Clone this repository to your local computer.
-3. Create `.env` file in **root** directory.
-4. Contents of `.env`:
+### Prerequisites
+
+- **Git** - For version control
+- **Node.js** (v18+) - JavaScript runtime
+- **Bun** (optional, but recommended) - Fast JavaScript runtime and package manager
+- **npm** or **pnpm** - Package managers (if not using Bun)
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/harshDhiman3344/FinTeensAPP.git
+   cd FinTeensAPP
+   ```
+
+2. **Install dependencies**
+   ```bash
+   bun install
+   # or
+   npm install
+   ```
+
+3. **Create environment file**
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. **Start the development server**
+   ```bash
+   bun run dev
+   # or
+   npm run dev
+   ```
+
+5. **Open in your browser**
+   ```
+   http://localhost:3000
+   ```
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file in the root directory:
 
 ```env
-# .env
-
-# disabled next.js telemetry
+# Next.js Telemetry
 NEXT_TELEMETRY_DISABLED=1
 
-# Environment Variables Template (Replace with your actual values)
-```env
-# Clerk authentication (get from Clerk dashboard)
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your_publishable_key>
-CLERK_SECRET_KEY=<your_secret_key>
+# Clerk Authentication (Optional - for production)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key_here
+CLERK_SECRET_KEY=your_key_here
 
-# Neon PostgreSQL database
-DATABASE_URL="postgresql://<user>:<password>@<host>:<port>/finteens?sslmode=require"
+# Database (Optional - for production)
+DATABASE_URL=your_database_url
 
-# Stripe payment (get from Stripe dashboard)
-STRIPE_API_SECRET_KEY=<your_stripe_secret>
-STRIPE_WEBHOOK_SECRET=<your_webhook_secret>
+# Stripe (Optional - for payment features)
+STRIPE_API_SECRET_KEY=your_stripe_key
+STRIPE_WEBHOOK_SECRET=your_webhook_secret
 
-# Application URL
+# App Configuration
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-
-# Clerk admin user IDs (comma separated)
-CLERK_ADMIN_IDS="<your_user_id>"
 ```
 
-5. Obtain Clerk Authentication Keys
-   1. **Source**: Clerk Dashboard
-   2. **Procedure**:
-      - Log in to your Clerk account
-      - Navigate to API Keys section
-      - Copy `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`
+**Note**: The app works in demo mode without these environment variables. They're only needed for production deployment with authentication and real database.
 
-6. Retrieve Neon Database URI
-   1. **Source**: Neon Console
-   2. **Procedure**:
-      - Access your Neon project
-      - Copy the connection string
-      - Replace placeholders with your actual credentials
+## 🏃 Running the Application
 
-7. Fetch Stripe API Key and Webhook Secret
-   1. **Source**: Stripe Dashboard
-   2. **Procedure**:
-      - Log in to Stripe
-      - Navigate to API Keys & Webhooks
-      - Copy your secret keys
-
-8. Specify Public App URL
-   1. **Procedure**:
-      - Use `http://localhost:3000` for local development
-      - Replace with your production URL when deployed
-
-9. Identify Clerk Admin User IDs
-   1. **Source**: Clerk Dashboard
-   2. **Procedure**:
-      - Log in to your Clerk account.
-      - Navigate to the dashboard or settings page.
-      - Find the section related to admin user IDs.
-      - Copy the user IDs provided, ensuring they are separated by commas and spaces.
-
-10. Save and Secure:
-    - Save the changes to the `.env` file.
-
-11. Install Project Dependencies using `bun install --legacy-peer-deps`.
-
-12. Run the Seed Script:
-
-In the same terminal, run the following command to execute the seed script:
-
+### Development Mode
 ```bash
-bun run db:push && bun run db:prod
+bun run dev
+npm run dev
+```
+Server will run on `http://localhost:3000`
+
+### Production Build
+```bash
+bun run build
+npm run build
 ```
 
-This command uses `bun` to execute the Typescript file (`scripts/prod.ts`) and writes challenges data in database.
+### Run Production Build
+```bash
+bun run start
+npm start
+```
 
-13. Verify Data in Database:
+## 🛠️ Tech Stack
 
-Once the script completes, check your database to ensure that the challenges data has been successfully seeded.
+### Frontend
+- **React 19** - UI library
+- **Next.js 16.2** - React framework with App Router and Turbopack
+- **TypeScript** - Type safety and better development experience
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn/ui** - High-quality React components
+- **Zustand** - Lightweight state management
 
-14. Now app is fully configured 👍 and you can start using this app using either one of `bun dev`.
+### Backend & Database
+- **Next.js Server Actions** - Backend operations (no separate API needed)
+- **Drizzle ORM** - Type-safe database access
+- **PostgreSQL** (Neon) - Relational database
+- **Clerk** - Authentication system (optional for production)
 
-**NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
+### Development Tools
+- **Bun** - Fast JavaScript runtime and package manager
+- **ESLint** - Code linting and quality
+- **Prettier** - Automatic code formatting
+- **Turbopack** - Fast bundler
 
-## :camera: Screenshots
+### Deployment
+- **Vercel** - Platform for deployment
+- **Docker** - Containerization (optional)
 
-![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
+## 🤝 Contributing
 
-![Quests](/.github/images/img2.png "Quests")
+We welcome contributions to FINTEENS! Whether you find bugs, have feature suggestions, or want to improve the codebase, here's how you can help:
 
-![Shop](/.github/images/img3.png "Shop")
+### How to Contribute
 
-## :gear: Tech Stack
+1. **Fork the repository**
+   ```bash
+   git clone https://github.com/yourusername/FinTeensAPP.git
+   ```
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![Typescript](https://skillicons.dev/icons?i=ts "Typescript")](https://www.typescriptlang.org/ "Typescript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Vercel](https://skillicons.dev/icons?i=vercel "Vercel")](https://vercel.app/ "Vercel") [![Postgresql](https://skillicons.dev/icons?i=postgres "Postgresql")](https://www.postgresql.org/ "Postgresql")
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-## :wrench: Stats
+3. **Make your changes**
+   - Write clean, readable code
+   - Add comments where necessary
+   - Follow the existing code style
 
-[![Stats for Lingo](/.github/images/stats.svg "Stats for Lingo")](https://pagespeed.web.dev/analysis?url=https://lingo-clone.vercel.app/ "Stats for Lingo")
+4. **Test your changes**
+   ```bash
+   bun run dev
+   # or
+   npm run dev
+   ```
 
-## :raised_hands: Contribute
+5. **Commit your changes**
+   ```bash
+   git add .
+   git commit -m "feat: description of your changes"
+   ```
 
-You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
+6. **Push to your fork**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
-## :gem: Acknowledgements
+7. **Open a pull request**
+   - Describe what you changed and why
+   - Reference any related issues
+   - Wait for review and feedback
 
-Useful resources and dependencies that are used in Lingo.
+### Code Style Guidelines
 
-- Special Thanks to Code with Antonio: https://codewithantonio.com/
-- Kenney Assets: https://kenney.nl/
-- Freesound: https://freesound.org/
-- Elevenlabs AI: https://elevenlabs.io/
-- Flagpack: https://flagpack.xyz/
-<!--- DEPENDENCIES_START --->
-- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.0.5
-- [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3
-- [@neondatabase/serverless](https://www.npmjs.com/package/@neondatabase/serverless): ^1.0.2
-- [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.1.11
-- [@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog): ^1.1.15
-- [@radix-ui/react-progress](https://www.npmjs.com/package/@radix-ui/react-progress): ^1.1.8
-- [@radix-ui/react-separator](https://www.npmjs.com/package/@radix-ui/react-separator): ^1.1.8
-- [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.2.4
-- [@types/node](https://www.npmjs.com/package/@types/node): ^25.5.0
-- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.14
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
-- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.1.0
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.27
-- [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
-- [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [dotenv](https://www.npmjs.com/package/dotenv): ^17.4.0
-- [drizzle-kit](https://www.npmjs.com/package/drizzle-kit): ^0.31.10
-- [drizzle-orm](https://www.npmjs.com/package/drizzle-orm): ^0.45.1
-- [eslint](https://www.npmjs.com/package/eslint): ^10
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.1.6
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier): ^10.1.8
-- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.7.0
-- [next](https://www.npmjs.com/package/next): ^16.2.1
-- [pg](https://www.npmjs.com/package/pg): ^8.20.0
-- [postcss](https://www.npmjs.com/package/postcss): ^8
-- [prettier](https://www.npmjs.com/package/prettier): ^3.8.1
-- [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss): ^0.7.2
-- [ra-data-simple-rest](https://www.npmjs.com/package/ra-data-simple-rest): ^5.14.5
-- [react](https://www.npmjs.com/package/react): ^19.2.4
-- [react-admin](https://www.npmjs.com/package/react-admin): ^4.16.20
-- [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar): ^2.2.0
-- [react-confetti](https://www.npmjs.com/package/react-confetti): ^6.4.0
-- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.4
-- [react-use](https://www.npmjs.com/package/react-use): ^17.6.0
-- [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
-- [stripe](https://www.npmjs.com/package/stripe): ^20.4.1
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.5.0
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.19
-- [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
-- [tsx](https://www.npmjs.com/package/tsx): ^4.21.0
-- [typescript](https://www.npmjs.com/package/typescript): ^6
-- [zustand](https://www.npmjs.com/package/zustand): ^5.0.12
+- Use TypeScript for all new code
+- Follow the existing project structure
+- Keep components small and focused
+- Write meaningful commit messages
+- Test your changes before submitting
 
-<!--- DEPENDENCIES_END --->
+## 📄 License
 
-## :coffee: Buy Me a Coffee
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
+## 🙏 Acknowledgments
 
-## :rocket: Follow Me
+FINTEENS was inspired by modern educational platforms and built with the goal of making financial literacy accessible and engaging for teenagers everywhere.
+
+### Special Thanks
+
+- The open-source community for amazing libraries and tools
+- Next.js and Vercel for the excellent framework and hosting
+- Shadcn/ui for beautiful, accessible components
+- All contributors and users who help improve FINTEENS
+
+## 📞 Support
+
+If you have any questions or need help:
+
+- Open an [Issue](https://github.com/harshDhiman3344/FinTeensAPP/issues)
+- Check existing discussions and documentation
+- Feel free to reach out through the repository
+
+---
+
+<p align="center">
+  Made with ❤️ for financial education
+</p>
+
+**[⬆ Back to Top](#-finteens---financial-literacy-learning-platform)
 
 [![Follow Me](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
 [![Tweet about this project](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fx.com%2F_sanidhyy)](https://x.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fduolingo-clone "Tweet about this project")
@@ -315,8 +327,4 @@ You can also give this repository a star to show more people and they can use th
   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanidhyy/duolingo-clone&type=Timeline&theme=dark" />
   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanidhyy/duolingo-clone&type=Timeline" />
   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanidhyy/duolingo-clone&type=Timeline" />
-</picture>
-</a>
 
-<br />
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
