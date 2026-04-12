@@ -93,8 +93,6 @@ duolingo-clone/
     |-- use-exit-modal.ts
     |-- use-hearts-modal.ts
     |-- use-practice-modal.ts
-  |- .env.example
-  |- .env/.env.local
   |- .gitignore
   |- .prettierrc.json
   |- bun.lock
