@@ -18,7 +18,7 @@ const SignInPage = () => {
             <input
               type="email"
               placeholder="you@example.com"
-              className="w-full rounded-md border border-neutral-300 px-4 py-2 text-sm focus:border-green-500 focus:outline-none"
+              className="w-full rounded-md border border-neutral-300 px-4 py-2 text-sm focus:border-purple-500 focus:outline-none"
             />
           </div>
 
@@ -27,7 +27,7 @@ const SignInPage = () => {
             <input
               type="password"
               placeholder="••••••••"
-              className=\"w-full rounded-md border border-neutral-300 px-4 py-2 text-sm focus:border-purple-500 focus:outline-none\"
+              className="w-full rounded-md border border-neutral-300 px-4 py-2 text-sm focus:border-purple-500 focus:outline-none"
             />
           </div>
 

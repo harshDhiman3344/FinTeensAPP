@@ -2,6 +2,7 @@ import { cache } from "react";
 
 import { unstable_noStore as noStore } from "next/cache";
 import { cookies } from "next/headers";
+import { getDailyXP } from "@/db/daily-xp";
 
 const DAY_IN_MS = 86_400_000;
 const DEMO_USER_ID = "demo-user-1";
@@ -265,10 +266,13 @@ export const getUserProgress = async () => {
   noStore();
   const activeCourseId = await getActiveCourseId();
   const activeCourse = MOCK_COURSES.find((c) => c.id === activeCourseId);
+  const dailyXP = await getDailyXP();
+  
   return {
     ...MOCK_USER_PROGRESS,
     activeCourseId: activeCourseId,
     activeCourse: activeCourse || MOCK_COURSES[0],
+    points: dailyXP,
   };
 };
 

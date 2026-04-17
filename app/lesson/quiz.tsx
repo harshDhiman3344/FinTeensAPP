@@ -131,6 +131,10 @@ export const Quiz = ({
             if (initialPercentage === 100) {
               setCredits((prev) => Math.min(prev + 1, MAX_HEARTS));
             }
+
+            // Make sure any server-derived UI (points/quests) re-renders using
+            // the latest cookies after XP is awarded.
+            router.refresh();
           })
           .catch(() => toast.error("Something went wrong. Please try again."));
       });
