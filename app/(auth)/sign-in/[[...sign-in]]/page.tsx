@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const SignInPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-green-50 to-white p-4">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-purple-50 to-white p-4">
       <div className="w-full max-w-md space-y-8">
         {/* Header */}
         <div className="text-center space-y-2">
@@ -27,11 +27,11 @@ const SignInPage = () => {
             <input
               type="password"
               placeholder="••••••••"
-              className="w-full rounded-md border border-neutral-300 px-4 py-2 text-sm focus:border-green-500 focus:outline-none"
+              className=\"w-full rounded-md border border-neutral-300 px-4 py-2 text-sm focus:border-purple-500 focus:outline-none\"
             />
           </div>
 
-          <Button size="lg" className="w-full bg-green-500 hover:bg-green-600" asChild>
+          <Button size="lg" className="w-full bg-purple-500 hover:bg-purple-600" asChild>
             <Link href="/learn">Sign In</Link>
           </Button>
         </div>
@@ -40,12 +40,12 @@ const SignInPage = () => {
         <div className="text-center space-y-2">
           <p className="text-sm text-neutral-600">
             Don't have an account?{" "}
-            <Link href="/sign-up" className="font-semibold text-green-600 hover:text-green-700">
+            <Link href="/sign-up" className="font-semibold text-purple-600 hover:text-purple-700">
               Sign up
             </Link>
           </p>
           <p className="text-xs text-neutral-500">
-            <Link href="/learn" className="text-green-600 hover:text-green-700">
+            <Link href="/learn" className="text-purple-600 hover:text-purple-700">
               Continue without signing in
             </Link>
           </p>

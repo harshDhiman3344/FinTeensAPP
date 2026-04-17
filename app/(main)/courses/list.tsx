@@ -24,8 +24,10 @@ export const List = ({ courses, activeCourseId }: ListProps) => {
 
     if (id === activeCourseId) return router.push("/learn");
 
-    startTransition(() => {
-      upsertUserProgress(id).catch(() => toast.error("Something went wrong."));
+    startTransition(async () => {
+      // Server action performs redirect on success.
+      // Do not catch here, as Next's redirect is implemented via throwing.
+      void upsertUserProgress(id);
     });
   };
 

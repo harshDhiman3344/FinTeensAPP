@@ -31,9 +31,9 @@
 				stroke: #ffa400
 			}
 			.guage-green {
-				color: #0cce6b;
-				fill: #0cce6b;
-				stroke: #0cce6b
+				color: #7C3AED;
+				fill: #7C3AED;
+				stroke: #7C3AED
 			}
 			.theme--agnostic .guage-undefined {
 				color: #5c5c5c;

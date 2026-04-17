@@ -156,6 +156,8 @@ export const Quiz = ({
   if (!challenge) {
     return (
       <>
+        {correctAudio}
+        {incorrectAudio}
         {finishAudio}
         <Confetti
           recycle={false}
@@ -210,8 +212,9 @@ export const Quiz = ({
 
   return (
     <>
-      {incorrectAudio}
       {correctAudio}
+      {incorrectAudio}
+      {finishAudio}
       <Header
         hearts={credits}
         percentage={percentage}

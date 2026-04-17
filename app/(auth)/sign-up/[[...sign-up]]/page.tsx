@@ -53,12 +53,12 @@ const SignUpPage = () => {
         <div className="text-center space-y-2">
           <p className="text-sm text-neutral-600">
             Already have an account?{" "}
-            <Link href="/sign-in" className="font-semibold text-green-600 hover:text-green-700">
+            <Link href="/sign-in" className="font-semibold text-purple-600 hover:text-purple-700">
               Sign in
             </Link>
           </p>
           <p className="text-xs text-neutral-500">
-            <Link href="/learn" className="text-green-600 hover:text-green-700">
+            <Link href="/learn" className="text-purple-600 hover:text-purple-700">
               Continue without creating an account
             </Link>
           </p>
