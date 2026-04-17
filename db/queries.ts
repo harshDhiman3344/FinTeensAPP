@@ -43,7 +43,7 @@ const MOCK_COURSES = [
 const MOCK_USER_PROGRESS = {
   userId: DEMO_USER_ID,
   userName: "Demo Teen",
-  userImageSrc: "/mascot.svg",
+  userImageSrc: "/newLogo.png",
   activeCourseId: 1,
   credits: 100,
   points: 0,
@@ -341,7 +341,7 @@ export const getTopTenUsers = cache(async () => {
     {
       userId: DEMO_USER_ID,
       userName: "Demo User",
-      userImageSrc: "/mascot.svg",
+      userImageSrc: "/newLogo.png",
       points: 100,
     },
   ];
