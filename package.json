@@ -1,5 +1,5 @@
 {
-  "name": "duolingo-clone",
+  "name": "finteens",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -65,7 +65,7 @@
     "email": "sanidhya.verma12345@gmail.com",
     "url": "https://github.com/sanidhyy"
   },
-  "description": "Interactive platform for language learning with lessons, quizzes, and progress tracking.",
+  "description": "Interactive platform for financial literacy with lessons, quizzes, and progress tracking.",
   "keywords": [
     "reactjs",
     "nextjs",
@@ -103,11 +103,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/duolingo-clone.git"
+    "url": "https://github.com/HackIndiaXYZ/hackindia-spark-7-north-region-coders-against-humanity.git"
   },
-  "homepage": "https://github.com/sanidhyy/duolingo-clone#readme",
+  "homepage": "https://github.com/HackIndiaXYZ/hackindia-spark-7-north-region-coders-against-humanity#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/duolingo-clone/issues",
+    "url": "https://github.com/HackIndiaXYZ/hackindia-spark-7-north-region-coders-against-humanity/issues",
     "email": "sanidhya.verma12345@gmail.com"
   },
   "funding": [

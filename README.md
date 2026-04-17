@@ -51,7 +51,7 @@ Teenagers lack basic financial literacy, leading to poor money decisions. FINTEE
 ### Setup
 ```bash
 git clone https://github.com/HackIndiaXYZ/hackindia-spark-7-north-region-coders-against-humanity.git
-cd duolingo-clone
+cd finteens
 bun install
 bun run dev
 ```
